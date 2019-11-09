@@ -1,0 +1,67 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP-C) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:    32
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1 6.2398116551765E+03 6.2398116551765E+03 2.9151351099465E-16
+           2 5.0793239190424E+02 5.0793239190424E+02 1.1191138774927E-16
+           3 1.5423530093014E+03 1.5423530093014E+03 1.4741999663632E-16
+           4 1.3302387929291E+03 1.3302387929291E+03 1.3674156949975E-15
+           5 1.1604087428436E+04 1.1604087428436E+04 1.5675419672281E-15
+ Comparison of RMS-norms of solution error
+           1 1.6462008369091E+02 1.6462008369091E+02 1.1912871787746E-14
+           2 1.1497107903825E+01 1.1497107903824E+01 2.5184260880593E-14
+           3 4.1207446207461E+01 4.1207446207462E+01 7.9318105956894E-15
+           4 3.7087651059693E+01 3.7087651059694E+01 1.8966887583964E-14
+           5 3.6211053051842E+02 3.6211053051841E+02 3.0610727232894E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                  1386.03
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  2067.98
+ Mop/s/thread    =                    64.62
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              06 Nov 2019
+
+ Compile options:
+    CC           = icc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -qopenmp -mcmodel=medium
+    CLINKFLAGS   = -O3 -qopenmp -mcmodel=medium
+    RAND         = (none)
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
