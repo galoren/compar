@@ -1,0 +1,72 @@
+
+
+ NAS Parallel Benchmarks (NPB3.3-OMP-C) - LU Benchmark
+
+ Size:  162x 162x 162
+ Iterations:                    250
+ Number of available threads:    32
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class C
+ Accuracy setting for epsilon =  1.0000000000000E-08
+ Comparison of RMS-norms of residual
+           1   1.0376698032354E+04 1.0376698032354E+04 1.0517735398338E-15
+           2   8.9221245880101E+02 8.9221245880101E+02 2.6758465078623E-15
+           3   2.5623881458266E+03 2.5623881458266E+03 1.7747012747741E-16
+           4   2.1919434385783E+03 2.1919434385783E+03 1.0373154317828E-15
+           5   1.7807805726106E+04 1.7807805726106E+04 1.0214562262880E-15
+ Comparison of RMS-norms of solution error
+           1   2.1598639971695E+02 2.1598639971695E+02 2.1054443774349E-14
+           2   1.5578955923987E+01 1.5578955923986E+01 1.3568718270983E-14
+           3   5.4131886307721E+01 5.4131886307721E+01 2.4939666618483E-15
+           4   4.8226264315405E+01 4.8226264315405E+01 1.9153578855849E-15
+           5   4.5590291004327E+02 4.5590291004325E+02 3.7155583891565E-14
+ Comparison of surface integral
+               6.6640455357218E+01 6.6640455357218E+01 8.5298665136824E-16
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      250
+ Time in seconds =                   391.37
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  5209.94
+ Mop/s/thread    =                   162.81
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              06 Nov 2019
+
+ Compile options:
+    CC           = icc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = -I../common
+    CFLAGS       = -g -Wall -O3 -qopenmp -mcmodel=medium
+    CLINKFLAGS   = -O3 -qopenmp -mcmodel=medium
+    RAND         = (none)
+
+--------------------------------------
+ Please send all errors/feedbacks to:
+ Center for Manycore Programming
+ cmp@aces.snu.ac.kr
+ http://aces.snu.ac.kr
+--------------------------------------
+
